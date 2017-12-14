@@ -1,0 +1,32 @@
+﻿@inherits UmbracoTemplatePage<Contact>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@using Terratype;
+@{
+    Layout = "Master.cshtml";
+}
+@Html.Partial("~/Views/Partials/SectionHeader.cshtml")
+
+<section class="section">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <h2>@Model.Content.MapHeader</h2>
+                @Html.Terratype(Model.Content.Map)
+            </div>
+
+            <div class="col-md-6">
+                <h2>@Model.Content.ContactFormHeader</h2>
+                @Model.Content.ContactIntro
+                @{Html.RenderAction("RenderForm", "Contact");}
+            </div>
+        </div>
+    </div>
+</section>
+<section class="scripts">
+    <script src="/scripts/jquery.validate.min.js"></script>
+    <script src="/scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/scripts/jquery.unobtrusive-ajax.js"></script>
+    <script src="/scripts/contactForm.js"></script>
+</section>
