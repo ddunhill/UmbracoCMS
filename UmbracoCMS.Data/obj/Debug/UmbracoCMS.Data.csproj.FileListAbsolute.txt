@@ -1,0 +1,6 @@
+C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Data\obj\Debug\UmbracoCMS.Data.csprojResolveAssemblyReference.cache
+C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Data\obj\Debug\UmbracoCMS.Data.csproj.CoreCompileInputs.cache
+C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Data\bin\Debug\UmbracoCMS.Data.dll
+C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Data\bin\Debug\UmbracoCMS.Data.pdb
+C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Data\obj\Debug\UmbracoCMS.Data.dll
+C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Data\obj\Debug\UmbracoCMS.Data.pdb

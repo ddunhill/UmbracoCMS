@@ -1,8 +1,9 @@
 ﻿using Umbraco.Web.Mvc;
 using System.Web.Mvc;
-using UmbracoCMS.Models;
+using UmbracoCMS.Library.Models;
 using log4net;
 using System.Reflection;
+using UmbracoCMS.Library.Helper;
 //using System.Net.Mail;
 
 namespace UmbracoCMS.Controllers
@@ -49,6 +50,8 @@ namespace UmbracoCMS.Controllers
             try
             {
                 //Store in DB
+                ContactHelper ch = new ContactHelper();
+                int? returnId = ch.Create(model);
                 return true;
             }
             catch (System.Exception ex)

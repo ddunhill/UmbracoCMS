@@ -1,14 +1,14 @@
 ﻿@inherits UmbracoViewPage<ContactViewModel>
-@using UmbracoCMS.Models
+@using UmbracoCMS.Library.Models
 
 <div id="form-outer">
     @using (Ajax.BeginForm("SubmitForm", "Contact", new AjaxOptions()
     {
-        UpdateTargetId = "form-result",
+        UpdateTargetId = "form-results",
         HttpMethod = "POST",
         InsertionMode = InsertionMode.Replace,
-        OnSuccess = "contactForm.ShowResult",
-        OnFailure = "contactForm.ShowResult",
+        OnSuccess = "contactForm.showResult",
+        OnFailure = "contactForm.showResult",
     }, new { id = "contact-form" }))
     {
         @Html.AntiForgeryToken()
@@ -17,40 +17,24 @@
             @Html.ValidationSummary()
         </div>
 
-        <div class="form-group">
-            <div class="col-xs-3">
+        <div class="form-group">    
                 @Html.LabelFor(m => m.FirstName)
-            </div>
-            <div class="col-xs-9">
-                @Html.TextBoxFor(m => m.FirstName, new { placeholder = "FirstName" })
-            </div>
+                @Html.TextBoxFor(m => m.FirstName, new { placeholder = "FirstName",  @class="form-control" })
         </div>
 
         <div class="form-group">
-            <div class="col-xs-3">
                 @Html.LabelFor(m => m.LastName)
-            </div>
-            <div class="col-xs-9">
-                @Html.TextBoxFor(m => m.LastName, new { placeholder = "LastName" })
-            </div>
+                @Html.TextBoxFor(m => m.LastName, new { placeholder = "LastName", @class="form-control" })
         </div>
 
         <div class="form-group">
-            <div class="col-xs-3">
                 @Html.LabelFor(m => m.EmailAddress)
-            </div>
-            <div class="col-xs-9">
-                @Html.TextBoxFor(m => m.EmailAddress, new { placeholder = "Email" })
-            </div>
+                @Html.TextBoxFor(m => m.EmailAddress, new { placeholder = "Email", @class="form-control" })
         </div>
 
         <div class="form-group">
-            <div class="col-xs-3">
                 @Html.LabelFor(m => m.Message)
-            </div>
-            <div class="col-xs-9">
-                @Html.TextAreaFor(m => m.Message, new { placeholder = "Message", row = 4 })
-            </div>
+                @Html.TextAreaFor(m => m.Message, new { placeholder = "Message", @class="form-control", row = 4 })
         </div>
         <button class="contact-submit">Submit</button>
     }

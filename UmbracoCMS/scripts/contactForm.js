@@ -14,3 +14,5 @@
         $('#form-result').show();
     }
 }
+
+contactForm.init();
