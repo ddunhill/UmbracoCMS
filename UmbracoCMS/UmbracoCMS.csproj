@@ -284,8 +284,6 @@
     <Content Include="scripts\jquery.validate.unobtrusive.js" />
     <Content Include="scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="scripts\umbraco-starterkit-app.js" />
-    <Content Include="Views\Blog.cshtml" />
-    <Content Include="Views\Blogpost.cshtml" />
     <Content Include="Views\Contact.cshtml" />
     <Content Include="Views\ContentPage.cshtml" />
     <Content Include="Views\Home.cshtml" />
@@ -296,10 +294,8 @@
     <Content Include="Views\Partials\Navigation\SubNavigation.cshtml" />
     <Content Include="Views\Partials\Navigation\TopNavigation.cshtml" />
     <Content Include="Views\Partials\SectionHeader.cshtml" />
-    <Content Include="Views\People.cshtml" />
-    <Content Include="Views\Person.cshtml" />
-    <Content Include="Views\Product.cshtml" />
-    <Content Include="Views\Products.cshtml" />
+    <Content Include="Views\Windows.cshtml" />
+    <Content Include="Views\Glass.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

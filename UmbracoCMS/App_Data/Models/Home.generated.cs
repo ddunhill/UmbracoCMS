@@ -46,15 +46,6 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
-		/// Content
-		///</summary>
-		[ImplementPropertyType("bodyText")]
-		public Newtonsoft.Json.Linq.JToken BodyText
-		{
-			get { return this.GetPropertyValue<Newtonsoft.Json.Linq.JToken>("bodyText"); }
-		}
-
-		///<summary>
 		/// Color Theme: This will be a custom property editor later
 		///</summary>
 		[ImplementPropertyType("colorTheme")]

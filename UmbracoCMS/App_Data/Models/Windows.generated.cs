@@ -20,16 +20,16 @@ using Umbraco.ModelsBuilder.Umbraco;
 
 namespace Umbraco.Web.PublishedContentModels
 {
-	/// <summary>Contact</summary>
-	[PublishedContentModel("contact")]
-	public partial class Contact : PublishedContentModel, INavigationBase
+	/// <summary>Windows</summary>
+	[PublishedContentModel("windows")]
+	public partial class Windows : PublishedContentModel, IContentBase, INavigationBase
 	{
 #pragma warning disable 0109 // new is redundant
-		public new const string ModelTypeAlias = "contact";
+		public new const string ModelTypeAlias = "windows";
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 #pragma warning restore 0109
 
-		public Contact(IPublishedContent content)
+		public Windows(IPublishedContent content)
 			: base(content)
 		{ }
 
@@ -40,27 +40,27 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 #pragma warning restore 0109
 
-		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Contact, TValue>> selector)
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Windows, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
 
 		///<summary>
-		/// Contact Form Header
+		/// Featured Products
 		///</summary>
-		[ImplementPropertyType("contactFormHeader")]
-		public string ContactFormHeader
+		[ImplementPropertyType("featuredProducts")]
+		public IEnumerable<IPublishedContent> FeaturedProducts
 		{
-			get { return this.GetPropertyValue<string>("contactFormHeader"); }
+			get { return this.GetPropertyValue<IEnumerable<IPublishedContent>>("featuredProducts"); }
 		}
 
 		///<summary>
-		/// Contact Intro
+		/// Content
 		///</summary>
-		[ImplementPropertyType("contactIntro")]
-		public IHtmlString ContactIntro
+		[ImplementPropertyType("bodyText")]
+		public Newtonsoft.Json.Linq.JToken BodyText
 		{
-			get { return this.GetPropertyValue<IHtmlString>("contactIntro"); }
+			get { return Umbraco.Web.PublishedContentModels.ContentBase.GetBodyText(this); }
 		}
 
 		///<summary>
@@ -69,7 +69,7 @@ namespace Umbraco.Web.PublishedContentModels
 		[ImplementPropertyType("pageTitle")]
 		public string PageTitle
 		{
-			get { return this.GetPropertyValue<string>("pageTitle"); }
+			get { return Umbraco.Web.PublishedContentModels.ContentBase.GetPageTitle(this); }
 		}
 
 		///<summary>

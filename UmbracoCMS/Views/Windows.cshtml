@@ -1,0 +1,27 @@
+﻿@inherits UmbracoTemplatePage<Windows>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+    Layout = "Master.cshtml";
+}
+@Html.Partial("~/Views/Partials/SectionHeader.cshtml")
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="product-grid">
+            @if (Model.Content.FeaturedProducts != null)
+            {
+                foreach (Glass glass in Model.Content.FeaturedProducts)
+                {
+                    <a href="@glass.Url" class="product-grid__item" style="background-image: url('@glass.Photos.FirstOrDefault().Url')">
+                        <div class="product-grid__item__overlay">
+                            <div class="product-grid__item__name">@glass.ProductName</div>
+                        </div>
+                    </a>
+                }
+            }
+        </div>
+    </div>
+
+</section>
