@@ -1,6 +1,3 @@
-USE [UmbracoCMS]
-GO
-
 /****** Object:  Table [dbo].[Contact]    Script Date: 10/01/2018 12:25:23 ******/
 SET ANSI_NULLS ON
 GO

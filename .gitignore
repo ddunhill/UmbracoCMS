@@ -17,3 +17,6 @@
 !*.bak
 # ImageProcessor DiskCache 
 **/App_Data/cache/
+/UmbracoCMS/obj/Release
+/UmbracoCMS.Data/obj/Release
+/UmbracoCMS.Library/obj/Release
