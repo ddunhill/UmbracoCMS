@@ -140,7 +140,6 @@ C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\bin\Umbraco.ModelsBuilder.pdb
 C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\bin\umbraco.providers.xml
 C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\bin\Umbraco.Web.UI.xml
 C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\bin\UmbracoExamine.xml
-C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\obj\Debug\UmbracoCMS.csprojResolveAssemblyReference.cache
 C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\obj\Debug\UmbracoCMS.csproj.CoreCompileInputs.cache
 C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\obj\Debug\UmbracoCMS.dll
 C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\obj\Debug\UmbracoCMS.pdb
@@ -148,3 +147,7 @@ C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\bin\UmbracoCMS.Library.dll
 C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\bin\UmbracoCMS.Library.pdb
 C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\bin\UmbracoCMS.Data.dll
 C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\bin\UmbracoCMS.Data.pdb
+C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\obj\Debug\UmbracoCMS.csprojAssemblyReference.cache
+C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\obj\Debug\UmbracoCMS.csproj.CopyComplete
+C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\bin\System.ValueTuple.dll
+C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS\bin\System.ValueTuple.xml

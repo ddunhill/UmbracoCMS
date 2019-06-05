@@ -1,4 +1,3 @@
-C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Library\obj\Debug\UmbracoCMS.Library.csprojResolveAssemblyReference.cache
 C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Library\obj\Debug\UmbracoCMS.Library.csproj.CoreCompileInputs.cache
 C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Library\bin\Debug\UmbracoCMS.Library.dll
 C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Library\bin\Debug\UmbracoCMS.Library.pdb
@@ -6,3 +5,5 @@ C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Library\obj\Debug\UmbracoCMS.Library.d
 C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Library\obj\Debug\UmbracoCMS.Library.pdb
 C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Library\bin\Debug\UmbracoCMS.Data.dll
 C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Library\bin\Debug\UmbracoCMS.Data.pdb
+C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Library\obj\Debug\UmbracoCMS.Library.csprojAssemblyReference.cache
+C:\Projects\Umbraco\UmbracoCMS\UmbracoCMS.Library\obj\Debug\UmbracoCMS.Library.csproj.CopyComplete

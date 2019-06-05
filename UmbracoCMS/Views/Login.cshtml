@@ -1,0 +1,19 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+@Html.Partial("~/Views/Partials/SectionHeader.cshtml", Model.Content.Parent)
+
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                @{ Html.RenderAction("RenderLogin", "Member"); }
+            </div>
+        </div>
+    </div>
+</section>
